@@ -1,9 +1,17 @@
+import sys
+
 def Token(object):
     pass
 
-def main(argv):
-    pass
+# Takes: file-descriptor
+def main(fd):
+    fcontents = fd.read()
+    print(fcontents)
 
 if __name__ == "__main__":
-    main(sys.argv)
+    if len(sys.argv) > 1:
+        fd = open(sys.argv[1], 'rb') # open read/binary
+    else:
+        fd = sys.stdin
+    main(fd)
 
