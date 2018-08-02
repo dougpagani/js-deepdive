@@ -1,0 +1,4 @@
+# Thinking: a.in
+
+- The input is a simple javascript-styled expression.
+- The output is a seeming-list, comma & newline-delimited.
